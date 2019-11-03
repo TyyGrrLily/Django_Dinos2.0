@@ -2,7 +2,7 @@ from django.contrib import admin
 
 # Register your models here.
 
-from catalog.models import Animals, Environment
+from catalog.models import Animal, Environment
 
-admin.site.register(Animals)
+admin.site.register(Animal)
 admin.site.register(Environment)

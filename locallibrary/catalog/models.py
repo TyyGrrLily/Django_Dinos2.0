@@ -40,7 +40,7 @@ class Environment(models.Model):
 
 #from django.urls import reverse # Used to generate URLs by reversing the URL patterns
 
-class Animals(models.Model):
+class Animal(models.Model):
     """Model representing a book (but not a specific copy of a book)."""
     species = models.CharField(max_length=200, default='unknown')
 
