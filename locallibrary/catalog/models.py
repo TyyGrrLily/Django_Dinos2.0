@@ -31,17 +31,17 @@ class Animals(models.Model):
         return self.name
 '''
 class Environment(models.Model):
-    """Model representing a book genre."""
+    
     name = models.CharField(max_length=200, help_text='Enter a environment (e.g. Dessert)')
     
     def __str__(self):
-        """String for representing the Model object."""
+        
         return self.name
 
 #from django.urls import reverse # Used to generate URLs by reversing the URL patterns
 
 class Animal(models.Model):
-    """Model representing a book (but not a specific copy of a book)."""
+    
     species = models.CharField(max_length=200, default='unknown')
 
     # Foreign Key used because book can only have one author, but authors can have multiple books
@@ -58,8 +58,8 @@ class Animal(models.Model):
     def __str__(self):
         """String for representing the Model object."""
         return self.species
-    ''' 
+    
     def get_absolute_url(self):
         """Returns the url to access a detail record for this book."""
         return reverse('animal-detail', args=[str(self.id)])
-    '''
+    
