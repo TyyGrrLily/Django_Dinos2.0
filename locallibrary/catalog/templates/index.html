@@ -1,0 +1,13 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Animal Manassery Home</h1>
+  <p>Welcome to the Animal Manassery, a website developed by <em>Izzy</em>!</p>
+  <h2>Dynamic content</h2>
+  <p>The Manassery has the following record counts:</p>
+  <ul>
+    <li><strong>Animals:</strong> {{ num_animals }}</li>
+    <li><strong>Environments:</strong> {{ num_envirnoments }}</li>
+
+  </ul>
+{% endblock %}
